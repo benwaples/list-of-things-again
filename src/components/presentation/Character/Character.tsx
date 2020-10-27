@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type Props = {
   id: string,
@@ -9,11 +10,11 @@ type Props = {
 export const Character = ({id, name, imageUrl}: Props) => {
   return (
     <div>
-      <h1>{name}</h1>
       <figure>
         <img src={imageUrl} alt={name} />
-        <figcaption>{`Character id: ${id}`}</figcaption>
+        <figcaption>{name}</figcaption>
       </figure>
+      <Link to={`/characters/${id}`}>See More</Link>
     </div>
   )
 }
