@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterList component behavior test CharacterList snapshot 1`] = `
+<DocumentFragment>
+  <h1>
+    Loading...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`CharacterList component behavior test CharacterList snapshot 2`] = `
+<DocumentFragment>
+  <div>
+    <li>
+      <div>
+        <figure>
+          <img
+            alt="name"
+            src="is"
+          />
+          <figcaption>
+            name
+          </figcaption>
+        </figure>
+        <a
+          href="/characters/my"
+        >
+          See More
+        </a>
+      </div>
+    </li>
+  </div>
+</DocumentFragment>
+`;

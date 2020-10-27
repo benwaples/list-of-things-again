@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CharacterList } from '../presentation/CharacterList/CharacterList'
+import { CharacterList } from '../../presentation/CharacterList/CharacterList'
 
 export const CharactersPage = () => {
   const [page, setPage] = useState(1)

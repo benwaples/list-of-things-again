@@ -5,7 +5,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom'
-import { CharactersPage } from './pages/CharactersPage';
+import { CharactersPage } from './pages/Characters/CharactersPage';
 import { DetailedCharacterPage } from './pages/DetailedCharacterPage/DetailedCharacterPage';
 import { Header } from './presentation/Header/Header';
 
