@@ -1,9 +1,15 @@
 import React from 'react'
+import { DetailedCharacter } from '../../presentation/DetailedCharacter/DetailedCharacter'
 
-export const DetailedCharacterPage = () => {
+type Props = {
+  match: { params: { id: string}}
+}
+
+export const DetailedCharacterPage = ({match: {params: {id}}}: Props) => {
+  console.log(id)
   return (
-    <div>
-      
-    </div>
+    <>
+      <DetailedCharacter id={id}/>
+    </>
   )
 }
