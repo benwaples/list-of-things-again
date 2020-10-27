@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailedCharacter Component behavior test should look the same as now with a snapshot test 1`] = `
+<DocumentFragment>
+  <h1>
+    Loading...
+  </h1>
+</DocumentFragment>
+`;
+
+exports[`DetailedCharacter Component behavior test should look the same as now with a snapshot test 2`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      name
+    </h1>
+    <figure>
+      <img
+        alt="name"
+        src="is"
+      />
+      <figcaption>
+        Character id: my
+      </figcaption>
+    </figure>
+  </div>
+</DocumentFragment>
+`;

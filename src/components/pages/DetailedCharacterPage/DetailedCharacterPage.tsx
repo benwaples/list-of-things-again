@@ -6,7 +6,6 @@ type Props = {
 }
 
 export const DetailedCharacterPage = ({match: {params: {id}}}: Props) => {
-  console.log(id)
   return (
     <>
       <DetailedCharacter id={id}/>
