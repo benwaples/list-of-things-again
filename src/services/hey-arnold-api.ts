@@ -10,8 +10,8 @@ export type Character = {
   imageUrl: string
 }
 
-export const getCharacters = (): Promise<Character[]> => {
-  return fetch('https://hey-arnold-api.herokuapp.com/api/v1/characters')
+export const getCharacters = (page = 1): Promise<Character[]> => {
+  return fetch(`https://hey-arnold-api.herokuapp.com/api/v1/characters?perPage=3&page=${page}`)
     .then(res => res.json())
     .then(json => json.map((character: CharacterShape) => ({
       id: character._id,
@@ -28,4 +28,4 @@ export const getCharacterById = (id: string): Promise<Character> => {
       name: character.name,
       imageUrl: character.image
     }))
-}
+} 

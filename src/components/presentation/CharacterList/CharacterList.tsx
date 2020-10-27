@@ -8,8 +8,8 @@ type CharacterProps = {
   imageUrl: string
 }
 
-export const CharacterList = () => {
-  const { characters, loading, error } = useCharacters()
+export const CharacterList = ({page}: {page: number}) => {
+  const { characters, loading, error } = useCharacters(page)
 
   const charactersElements = characters.map((character: CharacterProps) => <li key={character.id}>
         <Character {...character}/>
@@ -20,6 +20,7 @@ export const CharacterList = () => {
   if(error) return <h1>failed to get characters</h1>
   return (
     <div>
+      
       {charactersElements}
     </div>
   )

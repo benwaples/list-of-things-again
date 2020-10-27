@@ -13,17 +13,17 @@ type CharacterByIdHook = {
   character: Character
 }
 
-export const useCharacters = (): Characters  => {
+export const useCharacters = (page: number): Characters  => {
   const [characters, setCharacters] = useState<Character[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    getCharacters()
+    getCharacters(page)
       .then(characters => setCharacters(characters))
       .catch(err => setError(err))
       .finally(() => setLoading(false))
-  }, [])
+  }, [page])
 
   return {
     characters,
